@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <!-- 01 Mapbox dependencies -->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <!-- 02 deck.gl dependencies -->
+    <script src="https://unpkg.com/deck.gl@^8.8.0/dist.min.js"></script>
+
+    <!-- 03 connection to style.css -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>API Philly</title>
+  </head>
+
+  <body>
+    <!-- map container that map.js points towards -->
+    <div id="map"></div>
+    <!-- panel and hover tooltip that update by map interaction -->
+    <tooltip id="panel"></tooltip>
+    <!-- 04 connection to map.js -->
+    <script src="./map.js"></script>
+  </body>
+</html>
